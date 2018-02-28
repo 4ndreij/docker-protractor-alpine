@@ -1,0 +1,26 @@
+{
+  "name": "docker-protractor-alpine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Base image for leveraging dockerized UI automation tests using Protractor",
+  "license": "MIT",
+  "author": "4ndreij",
+  "scripts": {
+    "test": "protractor $SPECS_FOLDER/$PROTRACTOR_CONFIG_FILE",
+    "preinstall": "npm i -g protractor"
+  },
+  "dependencies": {
+    "@types/jasmine": "~2.5.45",
+    "@types/node": "~9.4.6",
+    "jasmine-core": "~3.1.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "path": "~0.12.7",
+    "protractor": "~5.3.0",
+    "protractor-beautiful-reporter": "~1.2.0",
+    "reflect-metadata": "~0.1.12",
+    "ts-node": "~5.0.0",
+    "tslint": "~5.3.2",
+    "typescript": "~2.3.3",
+    "zone": "~0.3.4"
+  }
+}
